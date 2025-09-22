@@ -1,4 +1,8 @@
-# TidewaveTasks
+# Tide Tasks
+
+A task management application built with Phoenix LiveView.
+
+## Getting Started
 
 To start your Phoenix server:
 
