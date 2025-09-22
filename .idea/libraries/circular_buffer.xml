@@ -1,0 +1,25 @@
+<component name="libraryTable">
+  <library name="circular_buffer" type="mix">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/circular_buffer/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/circular_buffer/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/circular_buffer/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/circular_buffer/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/circular_buffer/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/circular_buffer/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/circular_buffer/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/circular_buffer/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/circular_buffer/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/circular_buffer/ebin" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/deps/circular_buffer/lib" />
+      <root url="file://$PROJECT_DIR$/deps/circular_buffer/lib" />
+      <root url="file://$PROJECT_DIR$/deps/circular_buffer/lib" />
+      <root url="file://$PROJECT_DIR$/deps/circular_buffer/lib" />
+      <root url="file://$PROJECT_DIR$/deps/circular_buffer/lib" />
+      <root url="file://$PROJECT_DIR$/deps/circular_buffer/lib" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,4 @@
+2025-09-17 21:25:54.663 GMT [9775] FATAL:  invalid value for parameter "password_encryption": "plain"
+2025-09-17 21:25:54.663 GMT [9775] HINT:  Available values: md5, scram-sha-256.
+2025-09-17 21:27:26.261 GMT [11502] FATAL:  invalid value for parameter "password_encryption": "plain"
+2025-09-17 21:27:26.261 GMT [11502] HINT:  Available values: md5, scram-sha-256.

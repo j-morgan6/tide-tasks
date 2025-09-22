@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="csrf-token" content={get_csrf_token()} />
+    <title>Edit Task - Tide Tasks</title>
+    <link phx-track-static rel="stylesheet" href={~p"/assets/css/app.css"} />
+    <script defer phx-track-static type="text/javascript" src={~p"/assets/js/app.js"}>
+    </script>
+  </head>
+
+  <body class="bg-gray-50 min-h-screen">
+    <div class="max-w-2xl mx-auto px-6 py-12">
+      <!-- Header -->
+      <div class="mb-8">
+        <h1 class="text-3xl font-bold text-gray-900 mb-2">Edit Task</h1>
+        <.link href={~p"/tasks"} class="text-blue-600 hover:text-blue-800 font-medium">
+          ← Back to Task Board
+        </.link>
+      </div>
+      
+<!-- Edit Form -->
+      <div class="bg-white rounded-lg shadow p-8">
+        <.form :let={f} for={@changeset} action={~p"/tasks/#{@task.id}"} method="patch">
+          <div class="space-y-6">
+            <div>
+              <label class="block text-sm font-semibold text-gray-900 mb-2">Title</label>
+              <.input field={f[:title]} type="text" class="text-lg" />
+            </div>
+
+            <div>
+              <label class="block text-sm font-semibold text-gray-900 mb-2">Description</label>
+              <.input field={f[:description]} type="textarea" rows="4" />
+            </div>
+
+            <div>
+              <label class="block text-sm font-semibold text-gray-900 mb-2">Status</label>
+              <.input
+                field={f[:status]}
+                type="select"
+                options={[
+                  {"To Do", "todo"},
+                  {"In Progress", "in_progress"},
+                  {"Finished", "finished"}
+                ]}
+              />
+            </div>
+
+            <div class="flex space-x-4">
+              <button
+                type="submit"
+                class="flex-1 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+              >
+                Update Task
+              </button>
+              <.link
+                href={~p"/tasks"}
+                class="flex-1 bg-gray-200 hover:bg-gray-300 text-gray-900 px-6 py-3 rounded-lg font-semibold text-center transition-colors"
+              >
+                Cancel
+              </.link>
+            </div>
+          </div>
+        </.form>
+      </div>
+      
+<!-- Danger Zone -->
+      <div class="mt-8 bg-red-50 border border-red-200 rounded-lg p-6">
+        <h3 class="text-lg font-semibold text-red-900 mb-2">Danger Zone</h3>
+        <p class="text-red-700 mb-4">
+          Once you delete a task, there is no going back. Please be certain.
+        </p>
+        <.link
+          href={~p"/tasks/#{@task.id}"}
+          method="delete"
+          data-confirm="Are you sure you want to delete this task? This action cannot be undone."
+          class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded font-semibold transition-colors"
+        >
+          Delete Task
+        </.link>
+      </div>
+    </div>
+    
+<!-- Flash Messages -->
+    <div id="flash-group" class="fixed top-4 right-4 z-50">
+      <div
+        :if={@flash["info"]}
+        class="bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg mb-2"
+      >
+        {@flash["info"]}
+      </div>
+      <div :if={@flash["error"]} class="bg-red-500 text-white px-6 py-3 rounded-lg shadow-lg mb-2">
+        {@flash["error"]}
+      </div>
+    </div>
+  </body>
+</html>

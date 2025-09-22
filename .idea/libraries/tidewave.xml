@@ -1,0 +1,25 @@
+<component name="libraryTable">
+  <library name="tidewave" type="mix">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/tidewave/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/tidewave/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/tidewave/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/tidewave/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/tidewave/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/tidewave/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/tidewave/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/tidewave/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/tidewave/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/tidewave/ebin" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/deps/tidewave/lib" />
+      <root url="file://$PROJECT_DIR$/deps/tidewave/lib" />
+      <root url="file://$PROJECT_DIR$/deps/tidewave/lib" />
+      <root url="file://$PROJECT_DIR$/deps/tidewave/lib" />
+      <root url="file://$PROJECT_DIR$/deps/tidewave/lib" />
+      <root url="file://$PROJECT_DIR$/deps/tidewave/lib" />
+    </SOURCES>
+  </library>
+</component>
